@@ -48,7 +48,7 @@ export default function SignupForm() {
                     formData.append("name", full_name);
                     //const user = {email, password, name: full_name, image:formData, phone, position_id}
                     try {
-                      await axios.post('http://127.0.0.1:5000/auth/signup', formData, {
+                      await axios.post('https://ivan-abz-test-app.herokuapp.com/auth/signup', formData, {
                         headers: {
                           "Content-Type": "multipart/form-data",
                         },

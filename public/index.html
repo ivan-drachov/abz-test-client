@@ -47,7 +47,7 @@
         e.preventDefault();
         const formData = new FormData(form); 
         axios
-          .post("http://localhost:5000/auth/signup", formData, {
+          .post("https://ivan-abz-test-app.herokuapp.com/auth/signup", formData, {
             headers: {
               "Content-Type": "multipart/form-data",
             },

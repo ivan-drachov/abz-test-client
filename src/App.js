@@ -14,7 +14,7 @@ const App = () => {
   useEffect(() => {
     const fetchPosts = async () => {
       setLoading(true);
-      const res = await axios.get('http://localhost:5000/users');
+      const res = await axios.get('https://ivan-abz-test-app.herokuapp.com/users');
       setPosts(res.data);
       setLoading(false);
     };
